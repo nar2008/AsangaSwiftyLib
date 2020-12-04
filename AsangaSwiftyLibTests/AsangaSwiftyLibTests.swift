@@ -10,6 +10,12 @@ import XCTest
 
 class AsangaSwiftyLibTests: XCTestCase {
 
+    var swiftyLib: AsangaSwiftyLib!
+    
+    override func setUp() {
+        swiftyLib = AsangaSwiftyLib()
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,5 +35,12 @@ class AsangaSwiftyLibTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testAdd() {
+        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+    }
 
+    func testSub() {
+        XCTAssertEqual(swiftyLib.sub(a: 2, b: 1), 1)
+    }
 }

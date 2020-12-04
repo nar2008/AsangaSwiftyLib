@@ -16,6 +16,7 @@
 		2EFBF1922579C0DE004C00C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBF1902579C0DE004C00C3 /* Main.storyboard */; };
 		2EFBF1942579C0F0004C00C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBF1932579C0F0004C00C3 /* Assets.xcassets */; };
 		2EFBF1972579C0F0004C00C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBF1952579C0F0004C00C3 /* LaunchScreen.storyboard */; };
+		2EFBF1A02579EACA004C00C3 /* AsangaSwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBF19F2579EACA004C00C3 /* AsangaSwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		2EFBF1932579C0F0004C00C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EFBF1962579C0F0004C00C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EFBF1982579C0F0004C00C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFBF19F2579EACA004C00C3 /* AsangaSwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsangaSwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2EFBF16B2579BECB004C00C3 /* AsangaSwiftyLib.h */,
 				2EFBF16C2579BECB004C00C3 /* Info.plist */,
+				2EFBF19F2579EACA004C00C3 /* AsangaSwiftyLib.swift */,
 			);
 			path = AsangaSwiftyLib;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					2EFBF1672579BECB004C00C3 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					2EFBF1702579BECB004C00C3 = {
 						CreatedOnToolsVersion = 12.2;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFBF1A02579EACA004C00C3 /* AsangaSwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		2EFBF17D2579BECB004C00C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.daps.AsangaSwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		2EFBF17E2579BECB004C00C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		2EFBF1802579BECB004C00C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsangaSwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		2EFBF1812579BECB004C00C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsangaSwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
